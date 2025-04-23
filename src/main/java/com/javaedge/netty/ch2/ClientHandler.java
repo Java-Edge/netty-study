@@ -24,6 +24,7 @@ public class ClientHandler {
     private void doStart() {
         try {
             InputStream inputStream = socket.getInputStream();
+            // 对应一个 run 方法
             while (true) {
                 byte[] data = new byte[MAX_DATA_LEN];
                 int len;
