@@ -58,7 +58,7 @@
                                 <descriptorRef>jar-with-dependencies</descriptorRef>
                             </descriptorRefs>
                             <finalName>server</finalName>
-                            <outputDirectory>/data/vagrant/centos6.5/server</outputDirectory>
+                            <outputDirectory>${project.build.directory}/server</outputDirectory>
                         </configuration>
                         <phase>package</phase>
                         <goals>
@@ -79,7 +79,7 @@
                                 <descriptorRef>jar-with-dependencies</descriptorRef>
                             </descriptorRefs>
                             <finalName>client</finalName>
-                            <outputDirectory>/data/vagrant/centos6.5/client</outputDirectory>
+                            <outputDirectory>${project.build.directory}/client</outputDirectory>
                         </configuration>
                         <phase>package</phase>
                         <goals>
